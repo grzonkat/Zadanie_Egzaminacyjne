@@ -6,6 +6,6 @@
     $ratownik3=$_POST['ratownik3'];
     $zap="INSERT INTO ratownicy(nrKaretki,ratownik1,ratownik2,ratownik3) VALUES ('$karetka','$ratownik1','$ratownik2','$ratownik3');";
     $query=mysqli_query($con,$zap);
-    echo'Do bazy zostało wysłane zapytanie: INSERT INTO ratownicy (nrKaretki,ratownik1,ratownik2,ratownik3) VALUES ('.$karetka.','.$r1.','.$r2.','.$r3.');';
+    echo'Do bazy zostało wysłane zapytanie: INSERT INTO ratownicy (nrKaretki,ratownik1,ratownik2,ratownik3) VALUES ('.$karetka.','.$ratownik1.','.$ratownik2.','.$ratownik3.');';
     mysqli_close($con);
 ?>
