@@ -1,67 +1,70 @@
-*
-{
+*{
     font-family: Arial;
 }
-.baner>div
-{
+.banerlewy{
     background-color: saddlebrown;
     color: white;
-    height:100px;
-
-}
-.stopka>div
-{
-    background-color: saddlebrown;
-    color: white;
-    height:100px;
-    
-}
-.baner:nth-child(1)
-{
+    height: 100px;
     width: 55%;
     font-size: 120%;
 }
-.stopka:nth-child(1)
-{
+.banersrodek{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    width: 25%;
+}
+.banerprawy{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    width: 20%;
+    text-align: right;
+}
+.stopkalewa{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
     width: 55%;
     font-size: 120%;
 }
-.baner:nth-child(2)
-{
-    width:25%;
+.stopkasrodek{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    width: 25%;
 }
-.stopka:nth-child(2)
-{
-    width:25%;
-}
-.baner:nth-child(3)
-{
-    width:20%;
+.stopkaprawa{
+    background-color: saddlebrown;
+    color: white;
+    height: 100px;
+    width: 20%;
     text-align: right;
 }
-.stopka:nth-child(3)
-{
-    width:20%;
-    text-align: right;
-}
-.srodek
-{
+.glowny{
     background-color: snow;
     padding: 70px;
 }
-a
-{
-    border: dotted saddlebrown  ;
+a{
+    border-style: dotted;
+    border-width: 2px;
+    border-color: saddlebrown;
     background-color: snow;
     color: saddlebrown;
     padding: 20px;
     line-height: 100px;
 }
-ol
-{
-    list-style-type:lower-alpha;
+ol{
+    list-style-type: lower-alpha;
 }
-.baner
-{
+ 
+#banery{
+    display: flex;
+}
+.glowny{
+    display: flex;
+    flex-direction: column;
+}
+#stopki{
     display: flex;
 }

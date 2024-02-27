@@ -1,47 +1,53 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zespoły ratownicze</title>
-    <link rel="stylesheet" href="styl3.css">
-</head>
-<body>
-    <div id="kontener">
-        <div class="baner">
-            <div>Dodanie zespołu ratowniczego</div>
-        <div>Kontakt: <br> 022 222 11 333</div>
-        <div><img src="./obraz.jpg" alt="Ratownicy"></div>
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Zespoły ratownicze</title>
+        <link rel="stylesheet" href="../PESEL/styl3.css">
+    </head>
+    <body>
+        <div id="banery">
+            <div class="banerlewy">
+                <h2>Dodanie zespołu ratowniczego</h2>
+            </div>
+            <div class="banersrodek">
+                <p>Kontakt:<br> 022 222 11 333</p>
+            </div>
+            <div class="banerprawy">
+                <img src="obraz.jpg" alt="Ratownicy">
+            </div>
         </div>
-        <div class="srodek">
+ 
+        <div class="glowny">
             <h3>Dodaj nowy zespół</h3>
-            <form action="./dodanie.php" method="post">
-                <p>Numer karetki:</p>
-                <input type="number" name="" id="">
-                <p>Imię i nazwisko pierwszego ratownika:</p>
-                <input type="text" name="" id="">
-                <p>Imię i nazwisko drugiego ratownika:</p>
-                <input type="text" name="" id="">
-                <p>Imię i nazwisko trzeciego ratownika:</p>
-                <input type="text" name="" id="">
-                <br>
+            <form action="dodanie.php" method="post">
+                Numer karetki:<br>
+                <input type="number" name="nrKaretki"><br>
+                Imię i nazwisko pierwszego ratownika:<br>
+                <input type="text" name="ratownik1"><br>
+                Imię i nazwisko drugiego ratownika:<br>
+                <input type="text" name="ratownik2"><br>
+                Imię i nazwisko trzeciego ratownika:<br>
+                <input type="text" name="ratownik3"><br>
                 <input type="reset" value="CZYŚĆ">
-                <input type="submit" value="DODAJ   ">
+                <input type="submit" value="DODAJ">
             </form>
         </div>
-        <div class="stopka">
-            <div><a href="./kwerendy.txt">Zobacz kwerendy</a></div>
-            <div>
-                <h5>„Przypominamy numery alarmowe</h5>
+ 
+        <div id="stopki">
+            <div class="stopkalewa">
+                <a href="kwerendy.txt">Zobacz kwerendy</a>
+            </div>
+            <div class="stopkasrodek">
+                <h5>Przypominamy numery alarmowe</h5>
                 <ol>
                     <li>112</li>
                     <li>999</li>
                 </ol>
             </div>
-            <div>Autor <br> pesel</div>
-            
+            <div class="stopkaprawa">
+                <p>Autor<br>00000000000</p>
+            </div>
         </div>
-        
-    </div>
-    
-</body>
+    </body>
 </html>
