@@ -1,4 +1,4 @@
-INSERT INTO `ratownicy`(`nrKaretki`, `ratownik1`, `ratownik2`, `ratownik3`) VALUES (20, "Adam Nowak", "Jan Kowalski", "Anna Nowakowska");
-SELECT id, adres, ratownicy_id FROM zgloszenia WHERE dyspozytorzy_id=4;
-CREATE USER 'adam' IDENTIFIED BY 'Adam6&'
-GRANT CREATE, ALTER, DROP ON ratownicy TO 'adam';
+INSERT INTO ratownicy (nrKaretki, ratownik1, ratownik2, ratownik3) VALUES ('20', 'Adam Nowak', 'Jan Kowalski', 'Anna Nowaskowska');
+SELECT zgloszenia.id, adres, ratownicy_id FROM zgloszenia INNER JOIN dyspozytorzy ON dyspozytorzy.id=zgloszenia.dyspozytorzy_id WHERE dyspozytorzy.id=4;
+CREATE USER 'adam1' IDENTIFIED BY 'Adam6&';
+GRANT CREATE, ALTER, DROP on ratownicy TO 'adam1';

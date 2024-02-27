@@ -1,20 +1,20 @@
 *{
     font-family: Arial;
 }
-.banerlewy{
+.baner_lewy{
     background-color: saddlebrown;
     color: white;
     height: 100px;
     width: 55%;
     font-size: 120%;
 }
-.banersrodek{
+.baner_srodek{
     background-color: saddlebrown;
     color: white;
     height: 100px;
     width: 25%;
 }
-.banerprawy{
+.baner_prawy{
     background-color: saddlebrown;
     color: white;
     height: 100px;
