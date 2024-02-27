@@ -2,10 +2,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Zespoły ratownicze</title>
+    <link rel="stylesheet" href="styl3.css">
 </head>
 <body>
-    <script src="./dodanie.php"></script>
+    <div id="kontener">
+        <div class="baner">
+            <div>Dodanie zespołu ratowniczego</div>
+        <div>Kontakt: <br> 022 222 11 333</div>
+        <div><img src="./obraz.jpg" alt="Ratownicy"></div>
+        </div>
+        <div class="srodek">
+            <h3>Dodaj nowy zespół</h3>
+            <form action="./dodanie.php" method="post">
+                <p>Numer karetki:</p>
+                <input type="number" name="" id="">
+                <p>Imię i nazwisko pierwszego ratownika:</p>
+                <input type="text" name="" id="">
+                <p>Imię i nazwisko drugiego ratownika:</p>
+                <input type="text" name="" id="">
+                <p>Imię i nazwisko trzeciego ratownika:</p>
+                <input type="text" name="" id="">
+                <br>
+                <input type="reset" value="CZYŚĆ">
+                <input type="submit" value="DODAJ   ">
+            </form>
+        </div>
+        <div class="stopka">
+            <div><a href="./kwerendy.txt">Zobacz kwerendy</a></div>
+            <div>
+                <h5>„Przypominamy numery alarmowe</h5>
+                <ol>
+                    <li>112</li>
+                    <li>999</li>
+                </ol>
+            </div>
+            <div>Autor <br> pesel</div>
+            
+        </div>
+        
+    </div>
+    
 </body>
 </html>
